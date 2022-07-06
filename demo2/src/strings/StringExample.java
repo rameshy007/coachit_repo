@@ -35,6 +35,16 @@ public class StringExample {
 		for(int i=0;i<namesArr.length;i++) {
 			System.out.println(namesArr[i]);
 		}
+		String name1=new String(" ramesh ");
+		String name2=name1.intern();
+		String name3="rameshah";
+		System.out.println(name1==name2);
+		System.out.println(name2==name3);
+		System.out.println(name1.toUpperCase());
+		System.out.println(name1.trim());
+		System.out.println(name3.indexOf('h'));
+		System.out.println(name3.lastIndexOf('h'));
+		System.out.println(name3.concat("abc"));
 		
 		
 	}
