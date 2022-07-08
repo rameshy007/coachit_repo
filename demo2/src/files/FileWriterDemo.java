@@ -10,6 +10,7 @@ public class FileWriterDemo {
 			fw = new FileWriter("demo.txt");
 			fw.write('c');
 			fw.write("\n");
+			
 			fw.write("ramesh");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

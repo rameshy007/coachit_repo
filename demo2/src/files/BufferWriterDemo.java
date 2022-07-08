@@ -9,6 +9,7 @@ public class BufferWriterDemo {
 		FileWriter fw = new FileWriter("demo.txt");
 		BufferedWriter bw = new BufferedWriter(fw);
 		bw.write("ab");
+		
 		bw.newLine();
 		bw.write("ramesh");
 		bw.flush();
