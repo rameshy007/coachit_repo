@@ -14,9 +14,9 @@ public class HashMapDemo {
 		map.put("age", null);
 		map.put("occ", null);
 		map.put("name", "suresh");
-		map.put(null, "ramesh");
-		map.put(null, "venki");
 		
+		map.forEach((k, v) -> System.out.println(k + ":" + v));
+
 		System.out.println(map);
 		System.out.println(map.size());
 		Set set = map.keySet();
@@ -34,6 +34,6 @@ public class HashMapDemo {
 
 		}
 		System.out.println(map);
-		
+
 	}
 }

@@ -10,7 +10,16 @@ public class LamdaExpressionDemo {
 	 * 
 	 * () ->System.out.println("m1 method");
 	 * 
-	 */
+	 *//*
+		 * run(){
+		 * 
+		 * myJob(); }
+		 */
+	public void myJob() {
+		for (int i = 0; i < 11; i++) {
+			System.out.println(i);
+		}
+	}
 
 	public static void main(String[] args) {
 		/*
@@ -21,12 +30,9 @@ public class LamdaExpressionDemo {
 
 		};
 		fid.m1();
-
-		Runnable runnable = () -> {
-			for (int i = 1; i < 11; i++) {
-				System.out.println(Thread.currentThread().getName() + ":" + i);
-			}
-		};
+//classname::m1
+		LamdaExpressionDemo led=new LamdaExpressionDemo();
+		Runnable runnable =led::myJob;
 		Thread thread = new Thread(runnable);
 		thread.start();
 		for (int i = 1; i < 11; i++) {
