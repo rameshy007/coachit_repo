@@ -42,7 +42,7 @@ public class StreamsDemo {
 		System.out.println(list4);
 		List<String> list5 = list4.stream().map(s -> s.toUpperCase()).collect(Collectors.toList());
 		System.out.println(list5);
-		
+
 		Stream stream = Stream.of(11, 22, 44, 33);
 		stream.forEach(System.out::println);
 	}
